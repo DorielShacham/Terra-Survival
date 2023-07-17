@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra Survival</title>
+    <link rel="icon" href="../sprite/iconplanet.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../scss/dist/scoreboard.css">
+    <link rel="stylesheet" href="../scss/dist/style.css">
+    <link rel="stylesheet" href="../scss/dist/dialog.css">
+    <link rel="import" href="../music/music.mp3">
+</head>
+
+<body>
+    <audio controls autoplay>
+        <source src="../music/music.mp3" type="audio/mp3">
+    </audio>
+    <div id="popup"></div>
+    <canvas id="canvas" width="500" height="500"></canvas>
+
+    <div id="scoreboard"></div>
+    <script>
+        const username = prompt("Enter your username");
+        localStorage.setItem("username", username);
+    </script>
+    <script src="../typescript/dist/score.js"></script>
+    <script src="../typescript/dist/keys.js"></script>
+    <script src="../typescript/dist/collision.js"></script>
+    <script src="../typescript/dist/bullets.js"></script>
+    <script src="../typescript/dist/end.js" async></script>
+    <script src="../typescript/dist/script.js"></script>
+</body>
+
+</html>
