@@ -1,0 +1,13 @@
+#pointer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: cubic-bezier(0.23, 1, 0.32, 1) 0.2s;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(160, 0, 255, 0.8);
+  box-shadow: inset 0 0 20px black, 0 0 30px rgba(0, 0, 255, 0.8);
+  z-index: -1;
+}
